@@ -1,0 +1,12 @@
+.jumbotron {
+	&::after {
+		background: -webkit-linear-gradient(135deg,rgba(132,13,121,.88),rgba(208,44,180,.31));
+	}
+}
+
+
+.header{
+    /* background: rgba(132,13,121,.88); */
+    /* background: linear-gradient(45deg,rgba(132,13,121,.88),rgba(208,44,180,.31)); */
+    background: -webkit-linear-gradient(135deg,rgba(132,13,121,.88),rgba(208,44,180,.31));
+}
