@@ -1,12 +1,10 @@
-.jumbotron {
-	&::after {
-		background: -webkit-linear-gradient(135deg,rgba(132,13,121,.88),rgba(208,44,180,.31));
-	}
-}
-
-
-.header{
-    /* background: rgba(132,13,121,.88); */
-    /* background: linear-gradient(45deg,rgba(132,13,121,.88),rgba(208,44,180,.31)); */
-    background: -webkit-linear-gradient(135deg,rgba(132,13,121,.88),rgba(208,44,180,.31));
-}
+.toolbar {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #e3f2fd;
+    img{
+        width: 70px;
+    }
+  }

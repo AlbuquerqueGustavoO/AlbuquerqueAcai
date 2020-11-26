@@ -1,5 +1,5 @@
 {
-  "name": "varolli-doces",
+  "name": "albuquerque-acai",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -21,6 +21,8 @@
     "@angular/platform-browser": "~10.1.0",
     "@angular/platform-browser-dynamic": "~10.1.0",
     "@angular/router": "~10.1.0",
+    "@fortawesome/angular-fontawesome": "^0.8.0",
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
     "rxjs": "~6.6.0",
