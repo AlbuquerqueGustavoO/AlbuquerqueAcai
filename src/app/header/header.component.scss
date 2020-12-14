@@ -1,10 +1,200 @@
 .toolbar {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: Lato,sans-serif;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.5;
     background-color: #e3f2fd;
     img{
-        width: 70px;
+        width: 50px;/*70px*/
+        margin-top: -2px;
     }
-  }
+    .navbar{
+        &::before {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            content: "";
+            transition: all .3s;
+            transform: translateY(-100%);
+            background-color: #fff;
+        } 
+            .navbar-menu{
+                li{
+                    a{font-family: Lato, serif;
+                        font-size: 20px;
+                        color: #fff;
+                        opacity: 0.9;
+                    &:hover{
+                        color: #f5a637;
+                    }
+                }
+            }
+        }   
+        .icon-nav{
+            background-color: white;
+            opacity: 0.9;
+            border-radius: 40px;
+            width: 50px;
+            height: 50px;
+        }                  
+    }
+}
+
+// .navbar-dark:before {
+//     transform: translateY(0);
+// }
+
+.ConteudoTopo{
+    position: fixed;
+    img{
+        background-repeat: no-repeat;
+        width: 100%;
+        position: absolute;
+        z-index: -1
+    }
+}
+.section{
+    padding: 3rem 0;
+    &__heading{
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 5rem;
+        font-weight: 700;
+        color: #fff;
+    }
+    &__preheading{
+        font-family: Lato, sans-serif;
+        font-size: .75rem;
+        font-weight: 700;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+    }
+    &_welcome{
+        background-image: url('../../assets/Imagens/acai-03.jpg');
+        background-size: cover;
+        background-position: center center;
+        padding-top: 140px;
+        padding-bottom: 70px;
+        color: #fff;
+        &::before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            content: "";
+            opacity: .5;
+            background: #000;
+        }
+        @media screen and (max-width: 767px) {
+            max-height: 660px;                
+        }                  
+        &__heading{
+            font-size: 50px;
+            max-width: 600px;
+            margin-bottom: 1.2rem;/*2.5rem*/
+            font-family: "Plaufair Display", serif;
+            @media screen and (max-width: 767px) {
+                font-size: 40px;                
+            }               
+        }
+        &__subheading{
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            // font-size: 20px;
+        }
+        &__main{
+            .btn{
+                &__vejaMais{
+                    font-family: Lato,sans-serif;
+                    font-size: .75rem;
+                    font-weight: 700;
+                    line-height: 1.25rem;
+                    letter-spacing: .05em;
+                    text-transform: uppercase;
+                    border-color: #fd9843;
+                    color: white;
+                    padding: 1rem 1rem;
+                    &:hover{
+                        color:#fd9843;
+                    }
+                }
+            }
+            @media (max-width: 767px){
+                height: calc(100vh - 70px * 2);                
+            }            
+            @media (max-width: 600px){
+                height: 440px;
+            }                        
+        }   
+        &__footer{
+            height: 70px;
+            margin-top: 3rem;
+            a{
+                i{
+                    span{
+                        margin-left: 5px;
+                    }
+                    color: white;
+                    &:hover{
+                        color: #f5a637;
+                    }
+                }
+            }
+            &__social{
+                @media (min-width: 768px){
+                    margin-bottom: 0;
+                }
+            }
+        }           
+    }
+}
+
+.section_welcome__main>.container, .section_welcome__main>.container>.row {
+    height: 100%;
+}
+
+.section_welcome .text-muted {
+    color: hsla(0,0%,100%,.7)!important;
+}
+
+// @media (min-width: 1200px){
+// }
+
+// @media (min-width: 992px){
+// }
+
+@media (min-width: 768px){
+    .section_welcome {
+        height: 100vh;
+        padding-top: 70px;
+        padding-bottom: 0;
+    }
+    .section_welcome__main {
+        height: calc(100vh - 70px * 2);
+    }
+    .section_welcome__footer {
+        margin-top: 0;
+    }       
+}
+
+// @media (min-width: 576px){
+// }
+
+//animação
+.navbar-inverse{
+    position: fixed;
+    background-color: #57186c;
+    z-index: 1;
+    width: 100%;    
+    transition: all 0.9s ease-in-out;
+}
+
+.fixed-top{
+    transition: all 0.9s ease-in-out;
+}

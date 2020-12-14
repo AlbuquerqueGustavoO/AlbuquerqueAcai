@@ -1,22 +1,27 @@
+// .Conteudo-teste{
+//   margin-right: 15px;
+//   margin-left: 15px;
+// }
 
-.ConteudoTopo{
-  position: fixed;
-  width: 100%;
-  img{
-    width: 100%;
-    position: absolute;
-    z-index: -1
-  }
-  &::before {
-    content: "";
-    background: rgba(0, 0, 0, 0.5);
-    height: 848px;
-    position: absolute;
-    bottom: -800px;
-    right: 0;
-    left: 0;
-  }
-}
+
+// .ConteudoTopo{
+//   position: fixed;
+//   width: 100%;
+//   img{
+//     width: 100%;
+//     position: absolute;
+//     z-index: -1
+//   }
+  // &::before {
+  //   content: "";
+  //   background: rgba(0, 0, 0, 0.5);
+  //   height: 850px;
+  //   position: absolute;
+  //   bottom: -52px;
+  //   right: 0;
+  //   left: 0;
+  // }
+// }
 // svg#clouds {
 //   position: fixed;
 //   bottom: -160px;
