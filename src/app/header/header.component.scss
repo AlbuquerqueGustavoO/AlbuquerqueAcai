@@ -9,18 +9,6 @@
         margin-top: -2px;
     }
     .navbar{
-        &::before {
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            content: "";
-            transition: all .3s;
-            transform: translateY(-100%);
-            background-color: #fff;
-        } 
             .navbar-menu{
                 li{
                     a{font-family: Lato, serif;
@@ -42,11 +30,6 @@
         }                  
     }
 }
-
-// .navbar-dark:before {
-//     transform: translateY(0);
-// }
-
 .ConteudoTopo{
     position: fixed;
     img{
@@ -162,13 +145,6 @@
 .section_welcome .text-muted {
     color: hsla(0,0%,100%,.7)!important;
 }
-
-// @media (min-width: 1200px){
-// }
-
-// @media (min-width: 992px){
-// }
-
 @media (min-width: 768px){
     .section_welcome {
         height: 100vh;
@@ -182,9 +158,6 @@
         margin-top: 0;
     }       
 }
-
-// @media (min-width: 576px){
-// }
 
 //animação
 .navbar-inverse{

@@ -1,0 +1,90 @@
+.section {
+    padding: 3rem 0;
+    &_no-padding{
+        &_bottom{
+            padding-bottom: 0;
+        }
+    }
+    &_about{
+        min-height: 1050px;
+        background: url(../../assets/Imagens/barcaPequena_2.jpg) no-repeat 50%/cover;
+        @media (max-width: 600px){
+            min-height: 500px;
+        }         
+        &::before{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            content: "";
+            background: #000;
+            opacity: 0.5;
+            // background: linear-gradient(#fff,hsla(0,0%,100%,.1) 30%,transparent),linear-gradient(to bottom right,#fff 0,#fff 15%,transparent 30%,transparent);
+            // @media (min-width: 768px){
+            //     height: 100vh;
+            // }
+        }
+    }
+}
+
+.card {
+    margin-bottom: 2rem;
+
+    img{
+        max-height: 396px;
+        min-height: 396px;
+        &:hover{
+            cursor: pointer;
+            opacity: 0.8;
+            // background: #000;
+        }        
+        @media (max-width: 600px){
+            // max-height: auto;
+            min-height: auto;
+        }        
+    }
+}
+
+.animate{
+    opacity: 0.9 !important;
+    transition: all 0.5s ease-in-out !important;
+    transform: translate3d(0px, 0px, 0px) !important;
+}
+
+.animacao_row {
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+    transition: all 1.9s ease-in-out;
+}
+
+// .rigth {
+//     opacity: 0;
+//     transform: translate3d(50px, 0, 0);
+// }
+
+// .transition{
+//     &_Left{
+//         opacity: 0.9;
+//         position: relative;
+//         transition: all 0.9s ease-in-out;
+//         transform: translate3d(0px, 0px, 0px);
+//         background-color: red;
+//     }
+// }
+
+// .transition{
+//     &_rigth{
+//         opacity: 0.9;
+//         position: relative;
+//         transition: all 0.9s ease-in-out;
+//         transform: translate3d(0px, 0px, 0px);
+//         background-color: red;
+//     }
+// }
+
+// @media (min-width: 768px){
+// .section {
+//     padding: 6rem 0;
+//     }
+// }
