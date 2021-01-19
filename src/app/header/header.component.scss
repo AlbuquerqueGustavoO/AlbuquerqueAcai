@@ -5,7 +5,7 @@
     line-height: 1.5;
     background-color: #e3f2fd;
     img{
-        width: 50px;/*70px*/
+        width: 50px;
         margin-top: -2px;
     }
     .navbar{
@@ -78,7 +78,7 @@
         &__heading{
             font-size: 50px;
             max-width: 600px;
-            margin-bottom: 1.2rem;/*2.5rem*/
+            margin-bottom: 1.2rem;
             font-family: "Plaufair Display", serif;
             @media screen and (max-width: 767px) {
                 font-size: 40px;                
@@ -112,7 +112,7 @@
                 height: calc(100vh - 70px * 2);                
             }            
             @media (max-width: 600px){
-                height: 440px;
+                height: 415px;
             }                        
         }   
         &__footer{
@@ -132,6 +132,25 @@
             &__social{
                 @media (min-width: 768px){
                     margin-bottom: 0;
+                }
+            }
+            &__address{
+                i{
+                    color: #f5a637;             
+                    @media (max-width: 600px){
+                        margin-left: 1px;
+                    }  
+                    span{
+                        color: white;
+                        @media (min-width: 768px){
+                            margin-left: 6px;
+                            font-weight: 400;
+                        }                         
+                        @media (max-width: 600px){
+                            margin-left: 6px;
+                            font-weight: 400;
+                        }  
+                    }                    
                 }
             }
         }           
