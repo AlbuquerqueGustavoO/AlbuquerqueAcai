@@ -1,62 +1,63 @@
 .toolbar {
-    font-family: Lato,sans-serif;
+    font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.5;
     background-color: #e3f2fd;
-    img{
+    img {
         width: 50px;
         margin-top: -2px;
     }
-    .navbar{
-            .navbar-menu{
-                li{
-                    a{font-family: Lato, serif;
-                        font-size: 20px;
-                        color: #fff;
-                        opacity: 0.9;
-                    &:hover{
+    .navbar {
+        .navbar-menu {
+            li {
+                a {
+                    font-family: Lato, serif;
+                    font-size: 20px;
+                    color: #fff;
+                    opacity: 0.9;
+                    &:hover {
                         color: #f5a637;
                     }
                 }
             }
-        }   
-        .icon-nav{
+        }
+        .icon-nav {
             background-color: white;
             opacity: 0.9;
             border-radius: 40px;
             width: 50px;
             height: 50px;
-        }                  
+        }
     }
 }
-.ConteudoTopo{
+.ConteudoTopo {
     position: fixed;
-    img{
+    img {
         background-repeat: no-repeat;
         width: 100%;
         position: absolute;
-        z-index: -1
+        z-index: -1;
     }
 }
-.section{
+.section {
     padding: 3rem 0;
-    &__heading{
+    &__heading {
         margin-right: auto;
         margin-left: auto;
         font-size: 5rem;
         font-weight: 700;
         color: #fff;
     }
-    &__preheading{
+    &__preheading {
         font-family: Lato, sans-serif;
-        font-size: .75rem;
+        font-size: 0.75rem;
         font-weight: 700;
-        letter-spacing: .05em;
+        letter-spacing: 0.05em;
         text-transform: uppercase;
     }
-    &_welcome{
-        background-image: url('../../assets/Imagens/acai-03.jpg');
+    &_welcome {
+        background-image: url("../../assets/Imagens/acai-03.jpg");
         background-size: cover;
         background-position: center center;
         padding-top: 140px;
@@ -69,102 +70,103 @@
             bottom: 0;
             left: 0;
             content: "";
-            opacity: .5;
+            opacity: 0.5;
             background: #000;
         }
         @media screen and (max-width: 767px) {
-            max-height: 660px;                
-        }                  
-        &__heading{
+            max-height: 660px;
+        }
+        &__heading {
             font-size: 50px;
             max-width: 600px;
             margin-bottom: 1.2rem;
             font-family: "Plaufair Display", serif;
             @media screen and (max-width: 767px) {
-                font-size: 40px;                
-            }               
+                font-size: 40px;
+            }
         }
-        &__subheading{
+        &__subheading {
             margin-right: auto;
             margin-left: auto;
             margin-bottom: 3rem;
             max-width: 600px;
             // font-size: 20px;
         }
-        &__main{
-            .btn{
-                &__vejaMais{
-                    font-family: Lato,sans-serif;
-                    font-size: .75rem;
+        &__main {
+            .btn {
+                &__vejaMais {
+                    font-family: Lato, sans-serif;
+                    font-size: 0.75rem;
                     font-weight: 700;
                     line-height: 1.25rem;
-                    letter-spacing: .05em;
+                    letter-spacing: 0.05em;
                     text-transform: uppercase;
                     border-color: #fd9843;
                     color: white;
                     padding: 1rem 1rem;
-                    &:hover{
-                        color:#fd9843;
+                    &:hover {
+                        color: #fd9843;
                     }
                 }
             }
-            @media (max-width: 767px){
-                height: calc(100vh - 70px * 2);                
-            }            
-            @media (max-width: 600px){
+            @media (max-width: 767px) {
+                height: calc(100vh - 70px * 2);
+            }
+            @media (max-width: 600px) {
                 height: 415px;
-            }                        
-        }   
-        &__footer{
+            }
+        }
+        &__footer {
             height: 70px;
             margin-top: 3rem;
-            a{
-                i{
-                    span{
+            a {
+                i {
+                    span {
                         margin-left: 5px;
                     }
                     color: white;
-                    &:hover{
+                    &:hover {
                         color: #f5a637;
                     }
                 }
             }
-            &__social{
-                @media (min-width: 768px){
+            &__social {
+                @media (min-width: 768px) {
                     margin-bottom: 0;
                 }
             }
-            &__address{
-                i{
-                    color: #f5a637;             
-                    @media (max-width: 600px){
+            &__address {
+                i {
+                    color: #f5a637;
+                    @media (max-width: 600px) {
                         margin-left: 1px;
-                    }  
-                    span{
+                    }
+                    span {
                         color: white;
-                        @media (min-width: 768px){
+                        @media (min-width: 768px) {
                             margin-left: 6px;
                             font-weight: 400;
-                        }                         
-                        @media (max-width: 600px){
+                        }
+                        @media (max-width: 600px) {
                             margin-left: 6px;
                             font-weight: 400;
-                        }  
-                    }                    
+                        }
+                    }
                 }
             }
-        }           
+        }
     }
 }
 
-.section_welcome__main>.container, .section_welcome__main>.container>.row {
+.section_welcome__main > .container,
+.section_welcome__main > .container > .row {
     height: 100%;
 }
 
 .section_welcome .text-muted {
-    color: hsla(0,0%,100%,.7)!important;
+    color: hsla(0, 0%, 100%, 0.7) !important;
 }
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .section_welcome {
         height: 100vh;
         padding-top: 70px;
@@ -175,18 +177,18 @@
     }
     .section_welcome__footer {
         margin-top: 0;
-    }       
+    }
 }
 
 //animação
-.navbar-inverse{
+.navbar-inverse {
     position: fixed;
     background-color: #57186c;
     z-index: 1;
-    width: 100%;    
+    width: 100%;
     transition: all 0.9s ease-in-out;
 }
 
-.fixed-top{
+.fixed-top {
     transition: all 0.9s ease-in-out;
 }

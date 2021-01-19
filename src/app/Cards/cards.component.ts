@@ -11,14 +11,4 @@ export class CardsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
-  // @HostListener('window:scroll', ['$event'])
-  // onWindowScroll(e) {
-  //   let element = document.querySelector('.animacao_row');
-  //   if (window.pageYOffset > element.clientHeight) {
-  //     element.classList.add('animate');
-  //   } else {
-  //     element.classList.remove('animate');
-  //   }    
-  // }  
 }
